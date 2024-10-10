@@ -1,0 +1,735 @@
+/*principal*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    background-color: white;
+    color: rgb(185, 166, 131);
+    padding: 5px;
+}
+
+/*estilo para mi encabezado */
+.logo-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+}
+
+.logo-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.logo-container h1 {
+    font-size: 40px;
+    color: rgb(185, 166, 131);
+    margin: 20px 0 0 0; 
+}
+
+.pestanas {
+    list-style-type: none; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.pestanas li {
+    display: inline;
+}
+
+.pestanas a {
+    text-decoration: none;
+    color: inherit;
+}
+.pestanas {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pestanas li {
+    margin: 10px;
+}
+
+.pestanas a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.pestanas a:hover {
+    background-color: #ddd;
+    color: grey;
+}
+
+/*estilo para el cuerpo de mi pagina con foto*/
+.main{
+    grid-area: main;
+    background-color: none;
+    padding: 10px;
+    margin: 0%;
+}
+
+.wrap{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(imagenes/biblia.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap h1{
+    color:white;
+    text-align: center;
+    width: 100%;
+    font-size: 200%;
+}
+
+/*estilo para nuestra mision*/
+.contenedor4 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.columnaFrase{
+    text-align:center;
+}
+.columnaImagen {
+    margin-top: 20px; 
+    display: flex; 
+    justify-content: center;
+}
+
+#frase p{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #3d3838;
+    font-family: "Abel", sans-serif;
+    
+}
+#frase h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.columnaImagen img{
+    max-width: 100%; 
+    height: auto; 
+}
+
+#header{
+    text-align: center;
+    padding: 40px;
+    background-color:white;
+    font-size: 24px;
+    margin: 1px;
+}
+
+/*estilos para la solapa ministerio*/
+.texto-estrella {
+    display: flex;
+    align-items: center; 
+}
+.texto-estrella::before, .texto-estrella::after {
+    content: ' ';
+    display: block;
+    height: 1em;
+    padding-top: calc(0.5em - 1px);
+    padding-bottom: calc(0.5em - 1px);
+    background-color: #adb2b6;
+    background-clip: content-box;
+    flex: 1 0 auto; 
+}
+.texto-estrella::before {
+    margin-right: 1em;
+    border-right: 2px solid #CED1D4; 
+}
+.texto-estrella::after {
+    margin-left: 1em;
+    border-left: 2px solid #CED1D4; 
+}
+h4{
+    color:rgb(160, 153, 153);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*estilos para el carrusel de fotos*/
+.carrusel {
+    display: flex; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+}
+
+.slide {
+    flex: 0 0 auto; /* Evita que las diapositivas se estiren */
+    width: 100%; /* Por defecto, ocupa el 100% del contenedor */
+    max-width: 300px; /* Ancho máximo de cada diapositiva */
+    margin: 10px; /* Espacio entre las diapositivas */
+    position: relative; /* Para colocar información sobre la imagen */
+    scroll-snap-align: start; /* Alinear el inicio de la diapositiva en el contenedor */
+}
+
+.slide img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.info {
+    position: absolute; /* Coloca la información sobre la imagen */
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: wheat; 
+    padding: 10px; 
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+    font-family: cursive;
+}
+
+/*estilo para la seccion de abajo de mi index principal*/
+.contenido-oracion{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contenido-oracion a{
+    color: #770707;
+}
+.contenido-oracion p{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: "Abel", sans-serif;
+}
+.contenido-oracion h3{
+    font-family: "Abel", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(59, 56, 56);
+}
+
+/*estilo para los horarios*/
+.horarios{
+    background-color:  white;
+}
+.horarios h2{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black; 
+}
+
+/*estilos para mi boton volver arriba*/
+#volverArriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+/* Estilo para la sección de fondo del index1 */
+.hero-section {
+    position: relative;
+    background-image: url(imagenes/fondo2.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px; /* Puedes ajustar esta altura según prefieras */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el contenido centrado */
+.hero-content {
+    text-align: center;
+    color: white;
+    background-color:wheat; /* Fondo oscuro semitransparente detrás del texto */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilo para el título */
+.hero-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#555;
+}
+
+/* Estilo para el botón */
+.hero-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #555;
+}
+
+/*estilo para el mapa*/
+.mapa {
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+iframe {
+    width: 100%; 
+    height: 300px; 
+    max-width: 1000px; 
+    border: 0; 
+}
+
+.calle {
+    text-align: center;
+    margin-top: 15px; 
+}
+
+.direccion {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.direccion img {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+@media (max-width: 768px) {
+    iframe {
+        height: 200px; /* Altura más pequeña para pantallas móviles */
+    }
+
+    .mapa h1 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .calle p {
+        font-size: 0.9em; /* Ajusta el tamaño del texto en móviles */
+    }
+}
+
+
+@media (max-width: 600px) {
+    .logo-container img {
+        width: 80px;
+        height: 80px;
+    }
+    .logo-container h1 {
+        font-size: 30px;
+    }
+    .pestanas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-image {
+        width: calc(100% - 10px);
+    }
+    #gallery-container {
+        width: 100%;
+    }
+    .contenedor4 {
+        flex-direction: column;
+    }
+    .columnaFrase h1,
+    .columnaFrase p {
+        font-size: 20px;
+    }
+    .columnaImagen img {
+        width: 150px;
+        height: 150px;
+    }
+    .envoltorio-texto h1{
+        font-size: 1.5em;
+    }
+}
+
+/*Para pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .logo-container h1 {
+        font-size: 35px;
+    }
+    .gallery-image {
+        width: calc(50% - 10px);
+    }
+    .columnaFrase h1 {
+        font-size: 30px;
+    }
+    .columnaFrase p {
+        font-size: 25px;
+    }
+    .columnaImagen img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Para pantallas grandes (desktops) */
+@media (min-width: 1025px) {
+    .gallery-image {
+        width: calc(33.33% - 10px);
+    }
+}
+@media (min-width: 768px) {
+    .slide {
+        max-width: 300px; /* Mantiene un ancho fijo para pantallas más grandes */    
+    }
+}
+
+/*estilo para el index 2*/
+.form {
+    width: 80%;
+    max-width: 400px; 
+    margin: auto;
+    border: 1px solid wheat;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.g-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.g-input label {
+    margin-bottom: 5px;
+}
+
+.g-input input,
+.g-input textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    background-color: #b7bebe;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #457fa0;
+}
+
+/* Estilos para formulario*/
+.cuerpo-index2{
+    background: url(imagenes/orando2.jpg) center/cover;
+}
+
+/* Diseño del formulario pedido de oracion*/
+.formulario {
+    width: 80%;
+    max-width: 400px; 
+    margin: auto;
+    border: 1px solid #0c0000;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(42, 62, 117);
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-input label {
+    margin-bottom: 5px;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #15a0a0;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #457fa0;
+}
+
+/* esto es para mis index 3, 4, 5 y 6*/
+.all-ministerios {
+    width: 100%; /* Ajusta el ancho */
+    height: 300px; /* Ajusta la altura */
+}
+
+/*diseño para index3*/
+/* Estilo para el envoltorio con la imagen de fondo */
+.envoltorio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('imagenes/leyendo.jpg') center/cover;
+}
+
+/* Estilo para el envoltorio del texto */
+.envoltorio-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(57, 8, 204, 0.7); /* Ajusta la transparencia*/
+}
+
+/* Estilo para el título */
+.envoltorio-texto h1 {
+    margin: 0;
+    font-size: 100px; /* ajusta el tamaño del texto */
+    font-family: 'Holtwood One SC', serif;
+    font-family: 'Rubik Moonrocks', sans-serif;
+    color: rgb(250, 231, 180);/*vemos*/
+}
+
+/* Estilo para la frase que cambia */
+#frase0 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: gray;
+    font-family:cursive;
+}
+#palabraCambiante{
+    font-size: 50px;
+    font-family: 'Holtwood One SC', serif;
+    font-family: 'Rubik Moonrocks', sans-serif;
+    color:rgb(190, 23, 168);
+    text-align: center;
+}
+
+.nota-final{
+    background: url(imagenes/fondosniños.jpg) center/cover;
+    opacity: 0.7;
+    
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+.nota-final h4{
+    font-family: cursive;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+.nota-final p{
+    font-family: sans-serif ;
+    font-size: 35px;
+    color: black;
+}
+
+ /*diseño para index 4*/
+.envol {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('imagenes/simbolos.jpg') center/cover;/
+}
+
+/* Estilo para el envoltorio del texto */
+.envol-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(59, 93, 153, 0.7);
+}
+
+/* Estilo para el título */
+.envol-texto h1 {
+    margin: 0;
+    font-size: 50px; /* ajusta el tamaño del texto */
+    font-family: serif;
+    color: black;
+}
+
+.reuniones-generales {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+
+.reuniones-generales h4{
+    font-family: cursive;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(110, 103, 103);
+}
+
+.reuniones-generales p{
+    font-family: "Abel", sans-serif;
+    font-size: 35px;
+    color: black;
+    text-align: justify; /* Esto ajustará el texto para que quede más ordenado */
+}
+
+
+/*diseño para index 5*/
+.all-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('imagenes/jovenesY.jpg') center/cover;/
+}
+
+.solid-line {
+    width: auto;         
+    height: 25px;         
+    background-color: rgb(83, 80, 80);
+    margin: 20px 0;      
+}  
+
+/* Estilo para el envoltorio del texto */
+.all-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Estilo para el título */
+.all-text h1 {
+    margin: 0;
+    font-size: 70px; 
+    font-family: 'Gloria Hallelujah', cursive;
+    color:aquamarine;
+}
+
+.reuniones-jovenes {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+.reuniones-jovenes h4{
+    margin-top: auto;
+    font-family: cursive;
+    text-align: center;
+    font-size: 45px;
+}
+.reuniones-jovenes p{
+    font-family: sans-serif ;
+    font-size: 30px;
+    color: rgb(97, 94, 94);
+}
+
+/*diseño para index 6 */
+.wrap-hermanas {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('imagenes/tomadas\ de\ las\ manos.jpeg') center/cover;/
+}
+.all-texto h1 {
+    margin: 0;
+    font-size: 50px; /* ajusta el tamaño del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-align: center;
+}
+.damas{
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+.damas h4{
+    font-family: cursive;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(43, 40, 40);
+}
+
+.damas p{
+    font-family: sans-serif ;
+    font-size: 35px;
+    color: rgb(59, 52, 52);
+}
+
+
+
+
+/*estilos para mi pie de pagina*/
+.footer{
+    background-color:white;
+    color: rgb(185, 166, 131);
+    text-align: center;
+    padding: 15px;
+}
+
+.footer p{
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
